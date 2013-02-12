@@ -1,0 +1,174 @@
+<div id="inund-dialog-form" class="dialog-form" title="Notificar novo adverso de Inundación"  style=" z-index:6">
+	<form id="coordinates">
+		<input id="inund-lat" name="coordx_issue" type="text" readonly="readonly" style="position:absolute;width:184px;left:26px;top:174px;z-index:9" >
+		<input id="inund-lon" name="coordy_issue" type="text" readonly="readonly" style="position:absolute;width:184px;left:229px;top:174px;z-index:11" >
+		<!--<input name="lat" style="position:absolute;width:184px;left:26px;top:174px;z-index:9" type="text">
+		<input name="lon" style="position:absolute;width:184px;left:229px;top:174px;z-index:11" type="text"> -->
+	</form>
+	<form id="issue_inundacion">
+		<select class="cd_prov" name="cd_prov" style="position:absolute;width:184px;left:26px;top:60px;z-index:1030" tag="string"></select>
+		<select class="cd_conc" name="cd_conc" style="position:absolute;width:184px;left:227px;top:60px;z-index:1030" tag="string"></select>
+		<select class="cd_parro" name="cd_parro" style="position:absolute;width:184px;left:26px;top:116px;z-index:1030" tag="string"></select>
+		<select class="cd_entidade" name="cd_entidade" style="position:absolute;width:184px;left:228px;top:116px;z-index:1030" tag="string"></select>
+		<input name="nome_rio" style="position:absolute;width:250px;left:24px;top:417px;z-index:1030" type="text" tag="string">
+		<input name="hora_inicio" style="position:absolute;width:100px;left:23px;top:475px;z-index:1030" type="text" tag="string">
+		<input name="hora_pico" style="position:absolute;width:100px;left:143px;top:475px;z-index:1030" type="text" tag="string">
+		<input name="afectados" type="text" style="position:absolute;width:100px;left:401px;top:475px;z-index:1037">
+		<textarea name="medidas" style="position:absolute;width:510px;height:125px;left:20px;top:674px;z-index:1030" tag="string"></textarea>
+		<textarea name="observacions" style="position:absolute;width:510px;height:78px;left:20px;top:1004px;z-index:1030" tag="string"></textarea>
+		<textarea name="descripcion" style="position:absolute;width:509px;height:104px;left:24px;top:231px;z-index:1030" tag="string"></textarea>
+		<input name="hora_fin" style="position:absolute;width:100px;left:261px;top:475px;z-index:1030" type="text" tag="string">
+		<input name="nivel" style="position:absolute;width:207px;left:293px;top:417px;z-index:1030" type="text" tag="string">
+		<textarea name="afeccions" style="position:absolute;width:514px;height:104px;left:21px;top:532px;z-index:1030" tag="string"></textarea>
+		<textarea name="proposta_solucion" style="position:absolute;width:510px;height:125px;left:20px;top:837px;z-index:1030" tag="string"></textarea>
+	</form>
+	<div id="shape2" style="position:absolute; overflow:hidden; left:3px; top:23px; width:547px; height:328px; z-index:1"><img alt="shape" src="../images/shape0RDDB.gif" border="0">
+	</div>
+	<div id="shape4" style="position:absolute; overflow:hidden; left:3px; top:4px; width:90px; height:20px; z-index:2"><img alt="shape" src="../images/shape1ET5V.gif" border="0">
+	</div>
+	<div id="text6" style="position:absolute; overflow:hidden; left:11px; top:6px; width:74px; height:21px; z-index:3">
+		<div class="wpmd">
+			<div>
+				<font color="#000000">Localización</font>
+			</div>
+		</div>
+	</div>
+	<div id="text7" style="position:absolute; overflow:hidden; left:26px; top:40px; width:131px; height:21px; z-index:4">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Provincia</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text2" style="position:absolute; overflow:hidden; left:228px; top:96px; width:144px; height:21px; z-index:6">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Lugar</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text15" style="position:absolute; overflow:hidden; left:24px; top:153px; width:131px; height:21px; z-index:8">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Situación (x; y)</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text16" style="position:absolute; overflow:hidden; left:23px; top:211px; width:144px; height:21px; z-index:10">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Descrición</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="shape1" style="position:absolute; overflow:hidden; left:3px; top:380px; width:547px; height:728px; z-index:12"><img alt="shape" src="../images/shapeBJ0M8.gif" border="0">
+	</div>
+	<div id="shape8" style="position:absolute; overflow:hidden; left:3px; top:361px; width:196px; height:20px; z-index:13"><img alt="shape" src="../images/shapeVI1HT.gif" border="0">
+	</div>
+	<div id="text18" style="position:absolute; overflow:hidden; left:11px; top:363px; width:209px; height:21px; z-index:14">
+		<div class="wpmd">
+			<div>
+				<font color="#000000">Características da inundación</font>
+			</div>
+		</div>
+	</div>
+	<div id="text19" style="position:absolute; overflow:hidden; left:25px; top:397px; width:209px; height:21px; z-index:15">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Río que provoca a inundación</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="shape11" style="position:absolute; overflow:hidden; left:430px; top:397px; width:37px; height:22px; z-index:17"><img alt="shape" src="../images/shape7JQFG.gif" border="0">
+	</div>
+	<div id="shape12" style="position:absolute; overflow:hidden; left:22px; top:560px; width:124px; height:20px; z-index:18"><img alt="shape" src="../images/shape0P63M.gif" border="0">
+	</div>
+	<div id="text30" style="position:absolute; overflow:hidden; left:23px; top:460px; width:144px; height:21px; z-index:19">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Hora inicio</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text17" style="position:absolute; overflow:hidden; left:141px; top:460px; width:69px; height:21px; z-index:21">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Hora pico</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text1" style="position:absolute; overflow:hidden; left:259px; top:460px; width:69px; height:21px; z-index:32">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Hora fin</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text10" style="position:absolute; overflow:hidden; left:399px; top:460px; width:69px; height:21px; z-index:36">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Afectados</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text24" style="position:absolute; overflow:hidden; left:19px; top:651px; width:144px; height:21px; z-index:23">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Medidas adoptadas</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text26" style="position:absolute; overflow:hidden; left:19px; top:981px; width:144px; height:21px; z-index:25">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Observacións</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text3" style="position:absolute; overflow:hidden; left:27px; top:96px; width:76px; height:21px; z-index:28">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Parroquia</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text4" style="position:absolute; overflow:hidden; left:227px; top:40px; width:131px; height:21px; z-index:30">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Concello</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text5" style="position:absolute; overflow:hidden; left:293px; top:397px; width:260px; height:21px; z-index:34">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Nivel </b></font><font color="#000000">(indicando nivel de referencia)</font>
+			</div>
+		</div>
+	</div>
+	<div id="text8" style="position:absolute; overflow:hidden; left:22px; top:512px; width:71px; height:21px; z-index:36">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Afeccións</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="text9" style="position:absolute; overflow:hidden; left:19px; top:814px; width:144px; height:21px; z-index:38">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><b>Proposta de Solucións</b></font>
+			</div>
+		</div>
+	</div>
+	<div id="inund-download-file-pane" class="download-file-pane" style="position:absolute; overflow:hidden; left:19px; top:1110px; width:350px; height:50px; z-index:1068;visibility: hidden">
+		<a id="inund-download-file-link" class="download-file-link"> 
+			<div>
+				<img src="../images/download-file.png" id="download-file-image" class="download-file-image" style="position:absolute; overflow:hidden; width:50px; height:50px;border:0"/>
+			</div> 
+			<div id="file_path" style="position:absolute; overflow:hidden; margin: 20px 55px;">
+			</div>
+			</div>
+		</a>
+	</div>
+	
+</div>

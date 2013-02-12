@@ -1,0 +1,296 @@
+<div id="seca-dialog-form" class="dialog-form" title="Notificar novo adverso de SECA"  style=" z-index:6">
+	<form id="coordinates">
+		<input id="seca-lat" name="coordx_issue" type="text" readonly="readonly" style="position:absolute;width:184px;left:23px;top:145px;z-index:1030">
+		<input id="seca-lon" name="coordy_issue" type="text" readonly="readonly" style="position:absolute;width:184px;left:226px;top:145px;z-index:1040">
+	</form>
+	<form id="issue_seca">
+		<select class="cd_conc" name="cd_conc" style="position:absolute;width:184px;left:225px;top:57px;z-index:1000" tag="string"></select>
+		<select class="cd_prov" name="cd_prov" style="position:absolute;width:184px;left:25px;top:57px;z-index:1015" tag="string"></select>
+		<select class="cd_parro" name="cd_parro" style="position:absolute;width:184px;left:25px;top:100px;z-index:1010" tag="string"></select>
+		<select class="cd_entidade" name="cd_entidade" style="position:absolute;width:184px;left:225px;top:100px;z-index:1020" tag="string"></select>
+
+		<input type="checkbox" value="true" id="uso_domestico" name="uso_domestico" style="position:absolute;left:431px;top:65px;z-index:1050">
+		<input type="checkbox" value="true" id="uso_industrial" name="uso_industrial" style="position:absolute;left:431px;top:90px;z-index:1060">
+		<input type="checkbox" value="true" id="uso_rego" name="uso_rego" style="position:absolute;left:431px;top:117px;z-index:1070">
+		<input type="checkbox" value="true" id="uso_gandeiria" name="uso_gandeiria" style="position:absolute;left:431px;top:142px;z-index:1080">
+		<input type="checkbox" value="true" id="problem_cantidade" name="problem_cantidade" style="position:absolute;left:22px;top:246px;z-index:1090">
+		<input type="checkbox" value="true" id="problem_calidade" name="problem_calidade" style="position:absolute;left:136px;top:246px;z-index:1100">
+		<input type="text" id="afectados" name="afectados" style="position:absolute;width:184px;left:20px;top:190px;z-index:1110">
+		<input id="demanda" name="demanda" type="text" style="position:absolute;width:184px;left:225px;top:190px;z-index:1120">
+		
+		<select id="type_captacion" name="type_captacion" style="position:absolute;left:222px;top:405px;width:151px;z-index:1500">
+			<option value="0">Seleccione...</option>
+			<option value="1">Superficial</option>
+			<option value="2">Soterrada</option>
+			<option value="3">Manantial</option>
+		</select>
+		<select id="modo_captacion" name="modo_captacion" style="position:absolute;left:381px;top:404px;width:151px;z-index:1510">
+			<option value="0">Seleccione...</option>
+			<option value="1">Gravidade</option>
+			<option value="2">Impulsión</option>
+		</select>
+		<input id="cod_abastecemento" name="cod_abastecemento" type="text" style="position:absolute;width:184px;left:25px;top:352px;z-index:1130" tag="string">
+		<input id="nome_captacion" name="nome_captacion" type="text" style="position:absolute;width:184px;left:23px;top:405px;z-index:1140" tag="string">
+		<input id="coordx_captacion" name="coordx_captacion" type="text" maxlength=9 style="position:absolute;width:150px;left:222px;top:351px;z-index:1150" tag="string">
+		<input id="coordy_captacion" name="coordy_captacion" type="text" maxlength=9 style="position:absolute;width:150px;left:381px;top:351px;z-index:1160">
+		<input id="deposito" name="deposito" type="text" style="position:absolute;width:184px;left:20px;top:459px;z-index:1170" tag="string">
+		<input id="coordx_deposito" name="coordx_deposito" type="text" maxlength=9 style="position:absolute;width:150px;left:222px;top:458px;z-index:1180">
+		<input id="coordy_deposito" name="coordy_deposito" type="text" maxlength=9 style="position:absolute;width:150px;left:381px;top:458px;z-index:1190">
+		<input id="cota_etap" name="cota_etap" type="text" style="position:absolute;width:184px;left:20px;top:515px;z-index:1200" >
+		<input id="capac_tratamento" name="capac_tratamento" type="text" maxlength=9 style="position:absolute;width:150px;left:222px;top:514px;z-index:1210">
+		<textarea id="proposta_solucion" name="proposta_solucion" style="position:absolute;width:510px;height:125px;left:20px;top:623px;z-index:1220" tag="string"></textarea>
+		<textarea id="observacions" name="observacions" style="position:absolute;width:510px;height:57px;left:20px;top:833px;z-index:1230" tag="string"></textarea>
+	</form>
+	<div id="shape2" style="position:absolute; overflow:hidden; left:3px; top:23px; width:547px; height:260px; z-index:1"><img border=0 alt="shape" src="../images/shape28769296.gif">
+	</div>
+
+	<div id="shape4" style="position:absolute; overflow:hidden; left:3px; top:4px; width:90px; height:20px; z-index:4"><img border=0 alt="shape" src="../images/shape22120359.gif">
+	</div>
+	<div id="text6" style="position:absolute; overflow:hidden; left:11px; top:6px; width:74px; height:21px; z-index:5">
+		<div class="wpmd">
+			<div>
+				<font color="#000000">Localización</font>
+			</div>
+		</div>
+	</div>
+	<div id="shape3" style="position:absolute; overflow:hidden; left:425px; top:50px; width:106px; height:121px; z-index:16"><img border=0 alt="shape" src="../images/shape24641812.gif">
+	</div>
+		<div id="text4" style="position:absolute; overflow:hidden; left:433px; top:40px; width:33px; height:21px; z-index:25">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Usos</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text8" style="position:absolute; overflow:hidden; left:451px; top:68px; width:69px; height:21px; z-index:8">
+		<div class="wpmd">
+			<div>
+				Doméstico
+			</div>
+		</div>
+	</div>
+	<div id="text9" style="position:absolute; overflow:hidden; left:451px; top:93px; width:69px; height:21px; z-index:10">
+		<div class="wpmd">
+			<div>
+				Industrial
+			</div>
+		</div>
+	</div>
+	<div id="text10" style="position:absolute; overflow:hidden; left:451px; top:120px; width:69px; height:21px; z-index:12">
+		<div class="wpmd">
+			<div>
+				Rego
+			</div>
+		</div>
+	</div>
+	<div id="text11" style="position:absolute; overflow:hidden; left:451px; top:145px; width:69px; height:21px; z-index:14">
+		<div class="wpmd">
+			<div>
+				Gandeiría
+			</div>
+		</div>
+	</div>
+
+	<div id="shape5" style="position:absolute; overflow:hidden; left:17px; top:233px; width:200px; height:45px; z-index:21">
+		<img border=0 alt="shape" src="../images/shape25082765.gif" height="35" width="190">
+	</div>
+	<div id="text5" style="position:absolute; overflow:hidden; left:42px; top:249px; width:69px; height:21px; z-index:17">
+		<div class="wpmd">
+			<div>
+				Cantidade
+			</div>
+		</div>
+	</div>
+	<div id="text13" style="position:absolute; overflow:hidden; left:156px; top:249px; width:69px; height:21px; z-index:19">
+		<div class="wpmd">
+			<div>
+				Calidade
+			</div>
+		</div>
+	</div>
+	<div id="text7" style="position:absolute; overflow:hidden; left:25px; top:40px; width:131px; height:21px; z-index:6">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Provincia</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text2" style="position:absolute; overflow:hidden; left:225px; top:40px; width:144px; height:21px; z-index:22">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Concello</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text7" style="position:absolute; overflow:hidden; left:25px; top:83px; width:131px; height:21px; z-index:6">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Parroquia</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text2" style="position:absolute; overflow:hidden; left:225px; top:83px; width:144px; height:21px; z-index:22">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Lugar</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="shape6" style="position:absolute; overflow:hidden; left:430px; top:40px; width:37px; height:22px; z-index:24"><img border=0 alt="shape" src="../images/shape25821953.gif">
+	</div>
+
+	<div id="shape7" style="position:absolute; overflow:hidden; left:22px; top:223px; width:124px; height:20px; z-index:26"><img border=0 alt="shape" src="../images/shape25877953.gif">
+	</div>
+	<div id="text12" style="position:absolute; overflow:hidden; left:25px; top:223px; width:124px; height:21px; z-index:27">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Tipo problemática</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text15" style="position:absolute; overflow:hidden; left:25px; top:127px; width:131px; height:21px; z-index:28">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Situación (x; y)</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text16" style="position:absolute; overflow:hidden; left:20px; top:174px; width:144px; height:21px; z-index:30">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Habitantes afectados</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text3" style="position:absolute; overflow:hidden; left:223px; top:174px; width:131px; height:21px; z-index:2">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Demanda (m</B></font><font color="#000000"><B>&#179;</B></font><font color="#000000"><B>/día)</B></font>
+			</div>
+		</div>
+	</div>	
+	<div id="shape1" style="position:absolute; overflow:hidden; left:3px; top:315px; width:547px; height:244px; z-index:33"><img border=0 alt="shape" src="../images/shape19836453.gif">
+	</div>
+	<div id="shape8" style="position:absolute; overflow:hidden; left:3px; top:296px; width:341px; height:20px; z-index:34"><img border=0 alt="shape" src="../images/shape19836454.gif">
+	</div>
+	<div id="text18" style="position:absolute; overflow:hidden; left:11px; top:298px; width:333px; height:21px; z-index:35">
+		<div class="wpmd">
+			<div>
+				<font color="#000000">Características Técnicas do Sistema de Abastecemento</font>
+			</div>
+		</div>
+	</div>
+	<div id="text19" style="position:absolute; overflow:hidden; left:25px; top:332px; width:159px; height:21px; z-index:36">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Código Abastecemento</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="shape11" style="position:absolute; overflow:hidden; left:430px; top:332px; width:37px; height:22px; z-index:38"><img border=0 alt="shape" src="../images/shape19836455.gif">
+	</div>
+	<div id="shape12" style="position:absolute; overflow:hidden; left:22px; top:495px; width:124px; height:20px; z-index:39"><img border=0 alt="shape" src="../images/shape19836456.gif">
+	</div>
+	<div id="text29" style="position:absolute; overflow:hidden; left:21px; top:384px; width:131px; height:21px; z-index:40">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Nome Captación</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text30" style="position:absolute; overflow:hidden; left:20px; top:436px; width:144px; height:21px; z-index:42">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Depósito</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text1" style="position:absolute; overflow:hidden; left:220px; top:330px; width:212px; height:21px; z-index:44">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Situación Captación (x; y)</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text14" style="position:absolute; overflow:hidden; left:221px; top:384px; width:131px; height:21px; z-index:48">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Tipo Captación</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text20" style="position:absolute; overflow:hidden; left:380px; top:383px; width:131px; height:21px; z-index:50">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Modo Captación</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text17" style="position:absolute; overflow:hidden; left:220px; top:437px; width:212px; height:21px; z-index:51">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Situación Depósito (x; y)</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text21" style="position:absolute; overflow:hidden; left:20px; top:492px; width:144px; height:21px; z-index:54">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Cota</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="text22" style="position:absolute; overflow:hidden; left:220px; top:493px; width:212px; height:21px; z-index:56">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Capacidade Tratamento (m</B></font><font color="#000000"><B>&#179;</B></font><font color="#000000"><B>/h)</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="shape9" style="position:absolute; overflow:hidden; left:3px; top:585px; width:547px; height:181px; z-index:58"><img border=0 alt="shape" src="../images/shape20787109.gif">
+	</div>
+	<div id="text23" style="position:absolute; overflow:hidden; left:13px; top:568px; width:71px; height:21px; z-index:59">
+		<div class="wpmd">
+			<div>
+				<font color="#000000">Solucións</font>
+			</div>
+		</div>
+	</div>
+	<div id="text24" style="position:absolute; overflow:hidden; left:19px; top:600px; width:300px; height:21px; z-index:60">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Explicación do problema e Proposta de Solución</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="shape10" style="position:absolute; overflow:hidden; left:3px; top:566px; width:90px; height:20px; z-index:62"><img border=0 alt="shape" src="../images/shape21120031.gif">
+	</div>
+	<div id="shape13" style="position:absolute; overflow:hidden; left:3px; top:795px; width:547px; height:120px; z-index:63"><img border=0 alt="shape" src="../images/shape21220078.gif">
+	</div>
+	<div id="text25" style="position:absolute; overflow:hidden; left:13px; top:778px; width:81px; height:21px; z-index:64">
+		<div class="wpmd">
+			<div>
+				<font color="#000000">Observacións</font>
+			</div>
+		</div>
+	</div>
+	<div id="text26" style="position:absolute; overflow:hidden; left:19px; top:810px; width:144px; height:21px; z-index:65">
+		<div class="wpmd">
+			<div>
+				<font color="#000000"><B>Observacións</B></font>
+			</div>
+		</div>
+	</div>
+	<div id="shape14" style="position:absolute; overflow:hidden; left:3px; top:776px; width:100px; height:20px; z-index:67"><img border=0 alt="shape" src="../images/shape21220079.gif">
+	</div>
+	<div id="seca-download-file-pane" class="download-file-pane" style="position:absolute; overflow:hidden; left:19px; top:920px; width:350px; height:50px; z-index:1068;visibility: hidden">
+		<a id="seca-download-file-link" class="download-file-link"> 
+			<div>
+				<img src="../images/download-file.png" id="download-file-image" class="download-file-image" style="position:absolute; overflow:hidden; width:50px; height:50px;border:0"/>
+			</div> 
+			<div id="file_path" style="position:absolute; overflow:hidden; margin: 20px 55px;">
+			</div>
+			</div>
+		</a>
+	</div>
+</div>

@@ -1,0 +1,440 @@
+
+      html,body{
+      margin:0px;
+      width:100%;
+      height:100%;
+      overflow:hidden; margin:0; padding:0;
+      }
+		
+      .map {
+      height:80%;
+      width:80%;
+      border:solid 1px gray;
+      display: inline-block;
+      padding-left: 100px;
+	  }
+      #controlToggle li {
+      list-style: none;
+      }
+      .smallmap {
+      height:80%;
+      width:80%;
+      border:solid 1px #DDD;
+      display: inline-block;      
+	  }
+      #cabecera {
+      position: absolute;
+      top:0px;
+      left: 0px;
+      width:100%;
+      height:80px;
+	  border:solid 1px #DDD;
+      z-index: 5;
+      /*	background-image:url('../images/cabecera.jpg');*/
+      background-color: #01A0C8;/*white;transparent;*/
+      } 
+
+      #iet {
+      position: absolute;
+      top:0px;
+      float: left;
+	  padding:10px;
+      left: 0px;
+      width:170px;
+      height:60px;
+      z-index: 5;
+      background-color: #01A0C8;
+      }
+
+      #xunta {
+      position: absolute;
+      top:0px;
+	  padding:10px;
+      right: 0px;
+      width:225px;
+      height:60px;
+      z-index: 5;
+      background-color: #072B61;
+      }
+
+	  #sina {
+      position: absolute;
+      top:20px;
+      float: left;
+	  padding:0px;
+      left: 210px;
+      width:300px;
+      height:20px;
+      z-index: 3;
+      background-color: #01A0C8;
+      }
+	  
+      #mappanel {
+      position: absolute;
+      top:80px;
+      left: 0px;
+      width:100%;
+      height:100%;
+      z-index: 0;
+      background-color: white;/*transparent;*/
+      margin: 5px;
+      }
+      #foot_panel {
+      position: absolute;
+      bottom:0px;
+      left: 0px;
+      width:100%;
+      height:35px;
+      padding: 5px;
+      z-index: 6;
+      background-color: #01A0C8;
+      }
+      #boxContainer {
+      position: absolute;
+      /* top:81px; */
+      top: 85px;
+      right: 0px;
+      width: 245px;
+      height: 80%;
+      z-index: 1;
+      opacity: 0.85;
+      background-color: white;/*transparent;*/
+      /*overflow: auto;*/
+
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      user-select: none;
+      }
+
+    
+	#boxContainer div {
+		margin: 0px;
+		padding: 1px 10px 1px 2px;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+
+      .feature-list{
+	    height: 89%;
+        margin: 0px;
+        padding: 2px; 
+		overflow: none; /*overflow: none; because jquery.scroll module. ;-) */
+      }
+	  .wpmd {
+	  font-size: 11px;
+	  font-family: 'tahoma';
+	  font-style: normal;
+	  font-weight: normal;
+	  }
+      /* positions */
+      /* layouts */
+      .olControlEditingToolbar div {
+      float: left;
+      }     
+
+		/* form style */
+		body {
+			font-size: 62.5%;
+		}
+		label, input {
+			display:inline-block;
+		}
+		input.text {
+			margin-bottom: 12px;
+			width: 95%;
+			padding: .4em;
+		}
+		fieldset {
+			padding: 0;
+			border: 0;
+			margin-top: 25px;
+		}
+		h1 {
+			font-size: 1.2em;
+			margin: .6em 0;
+		}
+		.ui-dialog .ui-state-error {
+			padding: .3em;
+		}
+		.validateTips {
+			border: 1px solid transparent;
+			padding: 0.3em;
+		}
+
+
+/*Forms*/
+
+.download-file-link {
+	color: blue !important;
+}
+
+.download-file-link:hover {
+	color: blueviolet !important;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+/* style_map */
+
+.olControlPanel { 
+top: 150px;
+left: 10px;
+background: rgba(255, 255, 255, 0.7);
+filter: alpha(opacity = 70);
+border-radius: 4px;
+padding: 2px;
+}
+
+.olControlPanel div { 
+  display:block;
+  width:  24px;
+  height: 24px;
+  margin: 1px;
+  background-color:white;
+}
+
+/* .olControlPanel .olControlMouseDefaultsItemActive {  */
+/*   background-color: blue; */
+/*   background-image: url("../images/n_pan.png"); */
+/* } */
+/* .olControlPanel .olControlMouseDefaultsItemInactive {  */
+/*   background-color: orange; */
+/*   background-image: url("../images/n_pan_off.png"); */
+/* } */
+.myControls { 
+position:absolute;
+top: 283px;
+left: 11px;
+background: rgba(255, 255, 255, 0.7);
+filter: alpha(opacity = 70);
+border-radius: 4px;
+padding: 2px;
+z-index:100000000;
+}
+
+.myControls div { 
+  display:block;
+  width:  24px;
+  height: 24px;
+  margin: 1px;
+  background-color:white;
+}
+.myControls .myControlFind{
+display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgb(0, 0, 0);
+background-image: url("../images/find.png");
+filter: alpha(opacity=80);
+margin: 1,1,1,1;
+padding: 0;
+border-radius: 4px 4px 0 0;
+}
+
+.myControls.myControlInfo{
+display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgb(0, 0, 0);
+background-image: url("../images/info.png");
+filter: alpha(opacity=80);
+margin: 1,1,1,1;
+padding: 0;
+border-radius: 4px 4px 0 0;
+}
+
+.myControls .myControlHelp{
+display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgb(0, 0, 0);
+background-image: url("../images/helps.png");
+filter: alpha(opacity=80);
+margin: 1,1,1,1;
+padding: 0;
+border-radius: 0px 0px 4 4;
+}
+
+.olControlDrawFeatureActive { 
+  //cursor: url('zoomIn.gif') 12 10, crosshair;
+  cursor: crosshair;
+}
+
+.olControlPanel .olControlDrawFeatureItemActive { 
+display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgba(0, 0, 0, 0.5);
+background-image: url("../images/insert_newfeature.png");
+filter: alpha(opacity=50);
+margin: 1,1,1,1;
+padding: 0;
+border-radius: 4px 4px 0 0;
+}
+.olControlPanel .olControlDrawFeatureItemInactive { 
+display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgb(0, 0, 0);
+background-image: url("../images/insert_newfeature.png");
+filter: alpha(opacity=80);
+margin: 1,1,1,1;
+padding: 0;
+border-radius: 4px 4px 0 0;
+cursor: hand;
+}
+
+
+.olControlPanel .olControlOtherIssueBtnItemActive { 
+display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgba(0, 0, 0, 0.5);
+background-image: url("../images/insert_otherfeature.png");
+filter: alpha(opacity=50);
+margin: 1,1,1,1;
+padding: 0;
+/*border-radius: 4px 4px 0 0;*/
+}
+.olControlPanel .olControlOtherIssueBtnItemInactive { 
+display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgb(0, 0, 0);
+background-image: url("../images/insert_otherfeature.png");
+filter: alpha(opacity=80);
+margin: 1,1,1,1;
+padding: 0;
+/*border-radius: 4px 4px 0 0;*/
+cursor: hand;
+}
+
+
+
+.olControlPanel .olControlZoomBoxItemActive { 
+display: block;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgba(0, 0, 0, 0.5);
+background-image: url("../images/zoom_box.png");
+filter: alpha(opacity=50);
+margin: 1,1,1,1;
+padding: 0;
+}
+.olControlPanel .olControlZoomBoxItemInactive { 
+ display: block;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgb(0, 0, 0);
+background-image: url("../images/zoom_box.png");
+filter: alpha(opacity=80);
+margin: 1,1,1,1;
+padding: 0;
+cursor: hand;
+}
+
+.olControlPanel .olControlSelectFeatureItemActive {
+display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgba(0, 0, 0, 0.5);
+background-image: url("../images/pan.png");
+filter: alpha(opacity=50);
+margin: 1,1,1,1;
+padding: 0;
+cursor: hand;
+}
+.olControlPanel .olControlSelectFeatureItemInactive {
+ display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgb(0, 0, 0);
+background-image: url("../images/pan.png");
+filter: alpha(opacity=80);
+margin: 1,1,1,1;
+padding: 0;
+cursor: hand;
+}
+
+.olControlPanel .olControlZoomToMaxExtentItemInactive {
+ display: block;
+color: white;
+align: center;
+height: 24px;
+width: 24px;
+line-height: 19px;
+background: rgb(0, 0, 0);
+background-image: url("../images/zoom_max_extent.png");
+filter: alpha(opacity=80);
+margin: 1,1,1,1;
+padding: 0;
+border-radius: 0 0 4px 4px;
+cursor: hand;
+}
+
+.olControlMousePosition {
+	!font-size: 100%;
+    bottom: 0.3em;
+    left: 3px;
+    display: block;
+    position: absolute;
+    font-family: Arial;
+	width:90px;
+	text-align:center;
+	border: 1px solid gray;
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+
+
+div.olControlMousePosition{
+	!font-size: 100%;
+}
+
+.olControlScaleLine {
+	font-size: 100%;
+    position: relative;    
+    !right: 45%;
+    !left: 35%;
+    bottom: 0.3em;
+    text-align:center;
+	background-color: #ffffff;
+	opacity: 0.8;
+}
